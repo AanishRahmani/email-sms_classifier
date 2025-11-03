@@ -1,0 +1,64 @@
+# ===========================
+# Python & Streamlit Projects
+# ===========================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment folders (uv, venv, etc.)
+.venv/
+env/
+venv/
+.uv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+.virtual_documents/
+
+# uv specific cache and build artifacts
+.uv_cache/
+.uv_build/
+__pypackages__/
+.python-version
+
+
+# CSV and dataset files
+*.csv
+*.tsv
+*.xls
+*.xlsx
+
+# Logs and runtime files
+*.log
+*.pid
+*.json
+
+# Streamlit generated files
+.streamlit/secrets.toml
+.streamlit/config.toml
+.streamlit/cache/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Build and distribution files
+build/
+dist/
+*.egg-info/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+
+*.csv
