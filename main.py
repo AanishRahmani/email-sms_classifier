@@ -6,12 +6,14 @@ import nltk
 from nltk.stem.porter import PorterStemmer
 
 
-# Ensure NLTK data is available (covers newer punkt_tab too)
 for resource in ["punkt", "punkt_tab", "stopwords"]:
     try:
-        nltk.data.find(f"tokenizers/{resource}") if "punkt" in resource else nltk.data.find(f"corpora/{resource}")
+        if "punkt" in resource:
+            nltk.data.find(f"tokenizers/{resource}")
+        else:
+            nltk.data.find(f"corpora/{resource}")
     except LookupError:
-        nltk.download(resource)
+        nltk.download(resource, quiet=True)
 
 
 ps = PorterStemmer()
